@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 21px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        var drofo = ['anel da invisibilidade','par de botas magicas','par de botas magicas','pocao de sono','pocao da inocencia','pocao da inocencia'];
+        var torper = ['capa da invisibilidade','pedra do despertar','varinha das varinhas','pocao da inocencia','pocao da mentira','pocao da mentira','pocao anti-inteligencia'];
+        
+        //Torper consumiu uma das poçoes da mentira e ganhou o par de botas magicas do Drofo
+        drofo.splice(1,1);
+        torper.splice(4,1,'par de botas magicas');
+
+        //Torper achou o escudo magico e a espada magica
+        torper.splice(1,1,'escudo magico');
+        torper.push('espada magica');
+
+        //Drofo ganhou mais um bota e usou a poçao do sono
+        drofo.splice(2,1,'bota magica');
+        
+        //Drofo utiliza poçao anti inteligencia do torper e encontra um ovo de dragao e uma coxinha
+        torper.splice(6,1);
+        drofo.push('ovo de dragao', 'coxinha')
+        
+        document.write("O inventario de drofo ficou <br>" + "[<b>" + drofo + "</b>]" + "<br> e o de Torper <br>" + "[<b>" + torper + "</b>]")
+
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
